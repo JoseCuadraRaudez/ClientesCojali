@@ -6,6 +6,8 @@ using Infrastructure;
 using Infrastructure.Repositories;
 using MediatR;
 using System.Reflection;
+using Infrastructure.Persistence;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,6 +25,20 @@ builder.Services.AddMediatR(cfg =>
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IUsuarioRepository, FileUsuarioRepository>();
 builder.Services.AddScoped<IEmailService, FakeEmailService>();
+builder.Services.AddScoped<IUsuarioRepository, MySqlUsuarioRepository>();
+
+// Configurar MySQL
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+if (string.IsNullOrEmpty(connectionString))
+{
+    throw new InvalidOperationException("The connection string 'DefaultConnection' is not configured.");
+}
+
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+
+
+
 
 var app = builder.Build();
 
