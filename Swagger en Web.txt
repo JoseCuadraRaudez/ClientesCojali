@@ -1,0 +1,5 @@
+http://localhost:5084/swagger
+
+https://localhost:7015/swagger
+
+**** Para que Swagger no de erro, se debe correr en HTTPS

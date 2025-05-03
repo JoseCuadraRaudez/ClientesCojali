@@ -119,6 +119,6 @@ Al crear un usuario, se simula el envío de un correo electrónico. Este comport
 
 ## 📄 Licencia
 
-MIT - Puedes usar este código para fines educativos o profesionales.
+MIT - Puedes usar este código para fines educativos o profesionales..
 
 ---

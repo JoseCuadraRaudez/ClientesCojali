@@ -6,4 +6,11 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+   <None Update="Persistence\usuarios.json">
+	   <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+   </None>	
+  </ItemGroup>
+
 </Project>
