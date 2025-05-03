@@ -23,14 +23,14 @@ src/
 │   └── Program.cs
 │
 ├── Application/             # Capa de Aplicación
-│   ├── Commands/            # Comandos CQRS
-│   ├── Queries/             # Consultas CQRS
-│   ├── DTOs/                # Objetos de transferencia de datos
+│   └── Commands/            # Comandos CQRS
+│   └── Queries/             # Consultas CQRS
+│   └── DTOs/                # Objetos de transferencia de datos
 │   └── Interfaces/          # Interfaces de servicios (ej. IEmailService)
-│   ├── Handlers/            # Manejadores CQRS de MediatR para comandos y consultas
+│   └── Handlers/            # Manejadores CQRS de MediatR para comandos y consultas
 │
 ├── Domain/                  # Capa de Dominio
-│   ├── Entities/            # Entidades del dominio
+│   └── Entities/            # Entidades del dominio
 │   └── Interfaces/          # Interfaces del repositorio
 │
 ├── Infrastructure/          # Infraestructura
@@ -119,6 +119,6 @@ Al crear un usuario, se simula el envío de un correo electrónico. Este comport
 
 ## 📄 Licencia
 
-MIT - Puedes usar este código para fines educativos o profesionales.
+MIT - Puedes usar este código para fines educativos o profesionales..
 
 ---
