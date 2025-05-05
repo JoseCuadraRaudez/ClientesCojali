@@ -55,8 +55,10 @@ src/
 1. **Clona el repositorio o abre la solución en Visual Studio 2022.**
 
 2. **Establece como proyecto de inicio**: `API`.
+     + Para el Ejercicio1, cambiar a la rama: Ejercicio1
+     + Para el Ejercicio2, cambiar a la rama: Ejercicio2
 
-3. Asegúrate de que el archivo `usuarios.json` esté en la ruta:
+4. Asegúrate de que el archivo `usuarios.json` esté en la ruta:
 
    ```
    src/Infrastructure/Persistence/usuarios.json
@@ -78,9 +80,9 @@ src/
    ]
    ```
 
-4. **Ejecuta la solución** (Ctrl + F5 o botón "Start").
+5. **Ejecuta la solución** (Ctrl + F5 o botón "Start").
 
-5. Abre tu navegador en:
+6. Abre tu navegador en:
 
    ```
    https://localhost:PORT/swagger
